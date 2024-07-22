@@ -191,3 +191,10 @@ gh issue create --title "My new issue" --body "Here are more details." --assigne
 1. 如果熟练使用gh，那么效率是比使用git和频繁打开网页处理PR、ISSUE高的。比如我们的PR和Issue可以直接用命令行的方式去创建并管理，这可以使用自己编写的脚本处理PR，但可视化程度降低了。
 2. 如果不熟练gh，学习使用并熟练它是一个时间成本。
 3. 更多的详情请参考：[click here](https://docs.github.com/en/github-cli/github-cli/about-github-cli)
+
+# 提交规范
+1. 通过本地`fork`模块或者在模块上开`feature`分支的形式进行本地开发，每个Issue对应一个或多个feature（即如果Issue过大可以拆分）。
+2. 对相应的Issue，如果有问题，可以在该Issue的评论区进行讨论，这会同步发送到GITHUB绑定的邮箱。
+3. 提起`PR`时将所有涉及修改的模块同步提`PR`，`PR`中引用其绑定的ISSUE地址（即Issues中给大家分配的任务对应的Issue，微内核相关都在[rel4_kernel仓库](https://github.com/orgs/rel4team/projects/1)下）。
+4. 当一个`PR`合并之后，在对应的Issue中将本次修改涉及的所有`PR`链接以一个`comment`的形式提交并close issue。之后如果出现问题方便进行回滚追溯。
+5. `PR`最好找另外的一个同学帮忙Code Review和Approve确保代码的正确性。
